@@ -31,7 +31,7 @@ Before you can initialize the cluster, you must download and sign a certificate 
   ```
   $ aws cloudhsmv2 describe-clusters --filters clusterIds=<cluster ID> \
                                      --output text \
-                                     --query 'Clusters[].Certificates.ClusterCsr' \
+                                     --query 'Clusters[].Certificates' \
                                      > <cluster ID>_ClusterCsr.csr
   ```
 
